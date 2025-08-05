@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { TagBadge } from "@/components/TagBadge";
+import { ImageDisplay } from "@/components/ImageDisplay";
 import { supabase } from "@/integrations/supabase/client";
 import { formatDistanceToNow } from "date-fns";
 
@@ -83,13 +84,11 @@ export const ConfessionWall = () => {
                   {confession.message}
                 </p>
                 {confession.image_url && (
-                  <div className="rounded-lg overflow-hidden border border-primary/20">
-                    <img 
-                      src={confession.image_url} 
-                      alt="Confession image" 
-                      className="w-full max-h-96 object-cover"
-                    />
-                  </div>
+                  <ImageDisplay
+                    imageUrl={confession.image_url}
+                    alt="Confession image"
+                    className="mt-2"
+                  />
                 )}
               </div>
             </CardContent>

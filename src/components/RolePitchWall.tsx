@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
+import { ImageDisplay } from "@/components/ImageDisplay";
 import { supabase } from "@/integrations/supabase/client";
 import { formatDistanceToNow } from "date-fns";
 
@@ -94,13 +95,11 @@ export const RolePitchWall = () => {
                 </p>
                 
                 {pitch.image_url && (
-                  <div className="rounded-lg overflow-hidden border border-primary/20">
-                    <img 
-                      src={pitch.image_url} 
-                      alt="Expression image" 
-                      className="w-full max-h-96 object-cover"
-                    />
-                  </div>
+                  <ImageDisplay
+                    imageUrl={pitch.image_url}
+                    alt="Expression image"
+                    className="mt-2"
+                  />
                 )}
                 
                 {pitch.project_link && (
