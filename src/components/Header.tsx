@@ -7,12 +7,21 @@ export const Header = () => {
         <div className="absolute top-4 right-4">
           <ThemeToggle />
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gradient text-center">
-          Sentient Community
-        </h1>
-        <p className="text-center text-muted-foreground mt-2 text-sm md:text-base">
-          Share your thoughts and express yourself
-        </p>
+        <div className="flex flex-col items-center space-y-4">
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/sentient-logo.jpeg" 
+              alt="Sentient Community Logo" 
+              className="w-12 h-12 rounded-full object-cover"
+            />
+            <h1 className="text-3xl md:text-4xl font-bold text-gradient">
+              Sentient Community
+            </h1>
+          </div>
+          <p className="text-center text-muted-foreground text-sm md:text-base">
+            Share your thoughts and express yourself
+          </p>
+        </div>
       </div>
     </header>
   );
