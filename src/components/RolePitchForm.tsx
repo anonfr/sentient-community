@@ -93,7 +93,7 @@ export const RolePitchForm = () => {
   return (
     <Card className="border-primary/20">
       <CardHeader>
-        <CardTitle className="text-gradient">Express Yourself</CardTitle>
+        <CardTitle className="text-gradient">Express Yourself about Sentient</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -130,11 +130,11 @@ export const RolePitchForm = () => {
 
           <div>
             <label htmlFor="pitch" className="block text-sm font-medium mb-2">
-              You're contribution to Sentient Project *
+              Your contribution to Sentient Project *
             </label>
             <Textarea
               id="pitch"
-              placeholder="Share your thoughts, experiences, ideas, or anything you'd like to express..."
+              placeholder="Share your thoughts, experiences, ideas, or anything you'd like to express about Sentient..."
               value={pitch}
               onChange={(e) => setPitch(e.target.value)}
               className="min-h-[120px] border-primary/30 focus:border-primary resize-none"

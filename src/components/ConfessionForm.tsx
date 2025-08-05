@@ -91,7 +91,7 @@ export const ConfessionForm = () => {
   return (
     <Card className="border-primary/20">
       <CardHeader>
-        <CardTitle className="text-gradient">Share Your Thoughts Anonymously</CardTitle>
+        <CardTitle className="text-gradient">Share Your Thoughts Anonymously about Sentient</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">

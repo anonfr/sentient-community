@@ -44,17 +44,12 @@ export const FloatingHelp = () => {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="p-3 bg-muted/50 rounded-lg">
                   <h4 className="font-medium text-foreground mb-1">📝 Anonymous Confessions</h4>
-                  <p>Share your thoughts, feedback, or suggestions anonymously. Choose from tags like Praise, Criticism, Suggestion, or Meme.</p>
+                  <p>Share your thoughts, feedback, or suggestions about Sentient anonymously. Choose from tags like Praise, Criticism, Suggestion, or Meme.</p>
                 </div>
                 
                 <div className="p-3 bg-muted/50 rounded-lg">
                   <h4 className="font-medium text-foreground mb-1">💬 Express Yourself</h4>
-                  <p>Share your contributions and experiences publicly with your social media handles. Connect with the community!</p>
-                </div>
-                
-                <div className="p-3 bg-muted/50 rounded-lg">
-                  <h4 className="font-medium text-foreground mb-1">🖼️ Image Upload</h4>
-                  <p>Add images to your posts. Click on any image to view it in full screen.</p>
+                  <p>Share your contributions and experiences about Sentient publicly with your social media handles. Connect with the community!</p>
                 </div>
               </div>
             </div>
