@@ -26,7 +26,7 @@ export const Header = () => {
             </h1>
           </div>
           <p className="text-center text-muted-foreground text-xs md:text-sm lg:text-base">
-            Share your thoughts and express yourself
+            Share your thoughts about Sentient 
           </p>
         </div>
       </div>
