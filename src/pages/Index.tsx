@@ -5,6 +5,7 @@ import { ConfessionForm } from "@/components/ConfessionForm";
 import { ConfessionWall } from "@/components/ConfessionWall";
 import { RolePitchForm } from "@/components/RolePitchForm";
 import { RolePitchWall } from "@/components/RolePitchWall";
+import { FloatingHelp } from "@/components/FloatingHelp";
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState("confessions");
@@ -62,6 +63,8 @@ const Index = () => {
           </a>
         </div>
       </footer>
+      
+      <FloatingHelp />
     </div>
   );
 };
