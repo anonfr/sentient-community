@@ -11,15 +11,18 @@ interface ImageDisplayProps {
 export const ImageDisplay = ({ imageUrl, alt, className = "" }: ImageDisplayProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleImageClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <>
-      <div className={`relative group cursor-pointer ${className}`}>
+      <div className={`relative group cursor-pointer ${className}`} onClick={handleImageClick}>
         <div className="aspect-video rounded-lg overflow-hidden border border-primary/20 bg-muted">
           <img
             src={imageUrl}
             alt={alt}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            onClick={() => setIsModalOpen(true)}
+            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
             <Expand className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
