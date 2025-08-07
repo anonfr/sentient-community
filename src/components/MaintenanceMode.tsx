@@ -7,7 +7,7 @@ interface MaintenanceModeProps {
 }
 
 export const MaintenanceMode = ({ 
-  message = "We're currently performing scheduled maintenance to improve your experience.",
+  message = "I know it's an anonymous community, that doesn't mean you should write anything! I'm clearing some unwanted messages and soon the site will be live. Yours lovely AnonfrXBT :))))",
   estimatedTime = "We'll be back shortly"
 }: MaintenanceModeProps) => {
   return (
