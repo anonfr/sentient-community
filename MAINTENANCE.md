@@ -14,7 +14,7 @@ This guide explains how to enable and disable maintenance mode for the Sentient 
 
 2. **For Local Development:**
    ```bash
-   # Create/update .env.local file
+   # Create/update .env.local file.
    echo "VITE_MAINTENANCE_MODE=true" >> .env.local
    
    # Restart your dev server
